@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <h2>Portfolio</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.shares }}</td>
+                <td>{{ stock.price }}</td>
+                <td>{{ "%.2f"|format(stock["total_value"]) }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong>CASH :</strong></td>
+                <td>{{ cash }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong>TOTAL : </strong></td>
+                <td>{{ grand_total }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

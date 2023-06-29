@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock data
+{% endblock %}
+
+{% block main %}
+<style>
+  table {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #dddddd;
+  }
+</style>
+<h1>STOCK DATA</h1>
+<br>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Symbol</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>{{ name }}</td>
+          <td>{{ "%.2f"|format(price) }}</td>
+          <td>{{ symbol }}</td>
+        </tr>
+    </tbody>
+  </table>
+{% endblock %}
