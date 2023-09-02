@@ -1,6 +1,6 @@
 # Project Name
 
-Brief project description goes here.
+TRADE-DESK
 ![trade-desk portfolio-page](images/trade-desk-portfolio.png)
 ![trade-desk history page](images/tradedesk.png)
 
