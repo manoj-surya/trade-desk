@@ -1,6 +1,6 @@
-# Project Name
+# TRADE-DESK
 
-TRADE-DESK
+
 ![trade-desk portfolio-page](images/trade-desk-portfolio.png)
 ![trade-desk history page](images/tradedesk.png)
 
